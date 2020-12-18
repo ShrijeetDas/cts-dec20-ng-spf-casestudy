@@ -1,0 +1,52 @@
+<div style="text-align: center;">
+    <h4>Registration Form</h4>
+</div>
+<br/>
+<div>
+    <form #registrationForm = "ngForm" (ngSubmit) = "save(registrationForm.value)">
+        <div class = "row">
+            <div class = "col-2">
+                Enter Name :
+            </div>
+            <div class = "col-4">
+                <input type = "text" name = "name" [(ngModel)] = "name" class="form-control" required>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-2">
+                Enter Password :
+            </div>
+            <div class = "col-4">
+                <input type = "password" name = "password" [(ngModel)] = "password" class = "form-control" required>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-2">
+                Enter Phone Number :
+            </div>
+            <div class = "col-4">
+                <input type = "number" name = "phoneNo" [(ngModel)] = "phoneNo" class = "form-control" required>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-2">
+                Enter Date of Birth :
+            </div>
+            <div class = "col-4">
+                <input type = "date" name = "dob" [(ngModel)] = "dob" class = "form-control" required>
+            </div>
+        </div>
+        <br/>
+        <div class = "row">
+            <div class = "col-2">
+                
+            </div>
+            <div class = "col-2">
+                <a routerLink = "register" class = "btn btn-primary">Register</a>
+            </div>
+            <div class = "col-2">
+                <a routerLink = "login" class = "btn btn-primary"><small>Already have an account ?</small></a>
+            </div>
+        </div>
+    </form>
+</div>
